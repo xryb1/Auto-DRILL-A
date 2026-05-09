@@ -1,6 +1,5 @@
 package autodrill.filler;
 
-import arc.Core;
 import arc.math.geom.Point2;
 import arc.math.geom.Rect;
 import arc.struct.ObjectIntMap;
@@ -8,7 +7,6 @@ import arc.struct.Queue;
 import arc.struct.Seq;
 import mindustry.Vars;
 import mindustry.content.Blocks;
-import mindustry.gen.Call;
 import mindustry.type.Item;
 import mindustry.world.Block;
 import mindustry.world.Build;
@@ -16,7 +14,6 @@ import mindustry.world.Edges;
 import mindustry.world.Tile;
 import mindustry.world.blocks.production.Drill;
 
-import static arc.Core.bundle;
 import static mindustry.Vars.world;
 
 public class Util {

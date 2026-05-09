@@ -13,7 +13,6 @@ import mindustry.world.Block;
 import mindustry.world.Tile;
 import mindustry.world.blocks.production.BeamDrill;
 
-import java.util.Comparator;
 
 import static arc.Core.bundle;
 

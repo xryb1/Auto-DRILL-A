@@ -50,7 +50,7 @@ public class AutoDrill extends Mod {
 
     private Cons<Direction> directionAction;
 
-    private ImageButton mechanicalDrillButton, pneumaticDrillButton, blastDrillButton, laserDrillButton, plasmaBoreButton, largePlasmaBoreButton, impactDrillButton, eruptionDrillButton;
+    private ImageButton mechanicalDrillButton, pneumaticDrillButton, blastDrillButton, laserDrillButton, plasmaBoreButton, impactDrillButton, eruptionDrillButton;
 
     @Override
     public void init() {
