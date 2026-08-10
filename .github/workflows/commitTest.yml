@@ -5,6 +5,8 @@ on: [push, pull_request]
 jobs:
   buildJar:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - uses: actions/checkout@v4
@@ -27,9 +29,13 @@ jobs:
         path: build/libs/${{ github.event.repository.name }}.jar
 
     - name: Create GitHub Release
-      if: startsWith(github.ref, 'refs/tags/')
+      if: github.event_name == 'push'
       uses: softprops/action-gh-release@v2
       with:
+        tag_name: latest
+        name: "Latest Build"
+        body: "Automated build of the latest commit."
+        prerelease: true
         files: build/libs/${{ github.event.repository.name }}.jar
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
